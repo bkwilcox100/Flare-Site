@@ -75,8 +75,15 @@ img, svg { display: block; }
   letter-spacing: -0.5px;
   color: var(--ink);
   line-height: 1;
+  display: inline-flex;
+  align-items: center;
 }
 .wordmark .dot { color: var(--accent); }
+
+/* Official Flare logo (SVG wordmark) */
+.logo-img { height: 26px; width: auto; display: block; }
+.site-footer .logo-img { height: 22px; }
+.phone .logo-img { height: 20px; }
 
 /* ---------- Header / nav ---------- */
 .site-header {
