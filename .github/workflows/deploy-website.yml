@@ -29,6 +29,9 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: .
+          # Required so /.well-known/ (AASA + assetlinks.json for universal
+          # links) ships — the action otherwise excludes all dotfiles/dirs.
+          include-hidden-files: true
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
