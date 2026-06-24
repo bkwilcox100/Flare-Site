@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["99PD7P7558.com.bkwilcox.flare"],
+        "components": [
+          {
+            "/": "/i/*",
+            "comment": "Invite redeem deep links (flare-app/src/app/i/[code].tsx)"
+          }
+        ]
+      }
+    ]
+  }
+}
