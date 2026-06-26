@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — Flare</title>
-  <meta name="description" content="Why Flare exists: an easy, low-pressure way to let your friends know you're free right now — and see who else is." />
+  <title>About, Flare</title>
+  <meta name="description" content="Why Flare exists: an easy, low-pressure way to let your friends know you're free right now, and see who else is." />
   <link rel="canonical" href="https://sendaflareup.app/about" />
   <meta property="og:site_name" content="Flare" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sendaflareup.app/about" />
   <meta property="og:title" content="About Flare" />
-  <meta property="og:description" content="Why Flare exists: an easy, low-pressure way to let your friends know you're free right now — and see who else is." />
+  <meta property="og:description" content="Why Flare exists: an easy, low-pressure way to let your friends know you're free right now, and see who else is." />
   <meta property="og:image" content="https://sendaflareup.app/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Flare — Down to hang? Send up a flare." />
+  <meta property="og:image:alt" content="Flare, Down to hang? Send up a flare." />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="About Flare" />
   <meta name="twitter:description" content="Why Flare exists: an easy, low-pressure way to let your friends know you're free right now." />
@@ -22,24 +22,27 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <a href="/home" class="wordmark" aria-label="Flare home"><img class="logo-img" src="assets/flare-logo.svg" alt="Flare" /></a>
-      <nav class="nav-links" aria-label="Primary">
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary">
         <a href="/home">Home</a>
         <a href="/about" class="active">About</a>
-        <a href="/home#get" class="btn btn-primary nav-cta">Get Flare</a>
+        <a href="/home#get" class="btn btn-primary nav-cta">Get early access</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="page-hero">
-      <div class="container">
+      <div class="container reveal">
         <p class="eyebrow">About Flare</p>
         <h1>Making it easy to actually hang out</h1>
         <p style="max-width:34em;margin:14px auto 0;color:var(--text-2);font-size:17px;line-height:1.6;">
@@ -53,26 +56,26 @@
 
     <section class="section" style="padding-top:24px;">
       <div class="container" style="max-width:820px;">
-        <div class="article">
+        <div class="article reveal">
           <h2>The problem</h2>
           <p>
             Most hangouts die in the group chat. Someone floats an idea, three
             people react, nobody commits, and the moment passes. The hard part
-            isn't <em>wanting</em> to see your friends — it's all the back-and-forth
+            isn't <em>wanting</em> to see your friends, it's all the back-and-forth
             of figuring out a plan, the worry of being the one who reaches out, and
             never quite knowing who's actually around.
           </p>
           <p>
             Calendars are for things you plan ahead. Texts are for conversations.
             There was never an easy way to share the simplest, most useful thing of
-            all: <strong>"I'm free right now — anyone want to do something?"</strong>
+            all: <strong>"I'm free right now, anyone want to do something?"</strong>
           </p>
 
           <h2>The idea</h2>
           <p>
             Flare turns being free into a single tap. You <strong>send up a
-            flare</strong> — a quick "I'm free" your friends can see, set to last
-            a couple of hours, tonight, or however long you like — and you see who
+            flare</strong>, a quick "I'm free" your friends can see, set to last
+            a couple of hours, tonight, or however long you like, and you see who
             else is free right now. Wave at someone, reach out, and go. The whole
             thing takes seconds.
           </p>
@@ -84,10 +87,10 @@
         </div>
 
         <h2 class="section-head" style="font-size:24px;text-align:left;margin:8px 0 20px;">What Flare stands for</h2>
-        <div class="story-grid">
+        <div class="story-grid reveal" style="--reveal-delay:0.06s;">
           <div class="value-card">
             <h3>Everyone's equal</h3>
-            <p>Everyone sees the same thing. There's no way to pay to stand out or jump the line — so letting people know you're free feels easy, because everyone's doing it too.</p>
+            <p>Everyone sees the same thing. There's no way to pay to stand out or jump the line, so letting people know you're free feels easy, because everyone's doing it too.</p>
           </div>
           <div class="value-card">
             <h3>No pressure</h3>
@@ -103,27 +106,27 @@
           </div>
         </div>
 
-        <div class="article" style="margin-top:40px;">
+        <div class="article reveal" style="margin-top:40px;">
           <h2>The basics are always free</h2>
           <p>
             Saying you're free, seeing who else is, and reaching out will always
-            be free. That's what makes Flare work — the easier it is for your
+            be free. That's what makes Flare work, the easier it is for your
             friends to join in, the more useful it gets for everyone.
           </p>
           <h2>What's coming</h2>
           <p>
             We're building optional tools for people who want to get more out of
-            Flare — like saved groups for your different circles of friends, and
+            Flare, like saved groups for your different circles of friends, and
             the option to set your free time ahead of time. They're designed to
             help you organize your own social life, and they'll never let anyone
-            pay to look more available than others — the basics always stay free.
+            pay to look more available than others, the basics always stay free.
           </p>
 
           <h2>Signing up and text messages</h2>
           <p>
             You sign up with your phone number, so we can make sure it's really
             you and help your friends find you. When you create an account, you
-            consent to receive text messages (SMS) from Flare — a one-time code to
+            consent to receive text messages (SMS) from Flare, a one-time code to
             verify your number, plus important account and security alerts. Message
             frequency varies, and message and data rates may apply.
           </p>
@@ -159,6 +162,6 @@
       <span class="footer-copy">© <span id="year">2026</span> Flare. All rights reserved.</span>
     </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/site.js"></script>
 </body>
 </html>

@@ -3,50 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terms of Service — Flare</title>
+  <title>Terms of Service, Flare</title>
   <meta name="description" content="The terms that govern your use of the Flare app." />
   <link rel="canonical" href="https://sendaflareup.app/terms" />
   <meta property="og:site_name" content="Flare" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sendaflareup.app/terms" />
-  <meta property="og:title" content="Terms of Service — Flare" />
+  <meta property="og:title" content="Terms of Service, Flare" />
   <meta property="og:description" content="The terms that govern your use of the Flare app." />
   <meta property="og:image" content="https://sendaflareup.app/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Flare — Down to hang? Send up a flare." />
+  <meta property="og:image:alt" content="Flare, Down to hang? Send up a flare." />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Terms of Service — Flare" />
+  <meta name="twitter:title" content="Terms of Service, Flare" />
   <meta name="twitter:description" content="The terms that govern your use of the Flare app." />
   <meta name="twitter:image" content="https://sendaflareup.app/assets/og-image.png" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <a href="/home" class="wordmark" aria-label="Flare home"><img class="logo-img" src="assets/flare-logo.svg" alt="Flare" /></a>
-      <nav class="nav-links" aria-label="Primary">
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary">
         <a href="/home">Home</a>
         <a href="/about">About</a>
-        <a href="/home#get" class="btn btn-primary nav-cta">Get Flare</a>
+        <a href="/home#get" class="btn btn-primary nav-cta">Get early access</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="page-hero">
-      <div class="container">
+      <div class="container reveal">
         <h1>Terms of Service</h1>
         <p>Last updated: June 23, 2026</p>
       </div>
     </section>
 
     <section class="container">
-      <article class="article">
+      <article class="article reveal">
         <p>
           Welcome to Flare. These Terms of Service ("Terms") are a legal agreement
           between you and Flare ("Flare," "we," "us," or "our") governing your use
@@ -75,7 +78,7 @@
           Flare lets you broadcast a time-boxed "I'm free" signal (a "flare") to
           your friends, see which friends are currently free, and send a
           lightweight "wave." Flares are ephemeral and expire automatically. The
-          core features — broadcasting, seeing who's free, and connecting — are
+          core features, broadcasting, seeing who's free, and connecting, are
           free to use.
         </p>
 
@@ -223,6 +226,6 @@
       <span class="footer-copy">© <span id="year">2026</span> Flare. All rights reserved.</span>
     </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/site.js"></script>
 </body>
 </html>
